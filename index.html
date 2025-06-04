@@ -90,18 +90,46 @@
             <input class="form-check-input" type="radio" name="Type" id="Land/Plot" value="Land/Plot">
             Land/Plot
           </div>
-          <div class="col-md-4">
-            <input class="form-check-input" type="checkbox" name="Sq" id="1 BHK" value="1 BHK"></option>
-            1 BHK
-            <input class="form-check-input" type="checkbox" name="Sq" id="2 BHK" value="2 BHK"></option>
-            2 BHK
-            <input class="form-check-input" type="checkbox" name="Sq" id="3 BHK" value="3 BHK"></option>
-            3 BHK
-            <input class="form-check-input" type="checkbox" name="Sq" id="4 BHK" value="4 BHK"></option>
-            4 BHK
-            <input class="form-check-input" type="checkbox" name="Sq" id="4+ BHK" value="4+ BHK"></option>
-            4+ BHK
+
+          <div class="col-md-3 dropdown">
+            <button class="btn btn-outline-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select BHK Options
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1 BHK" id="bhk1" name="Sq">
+                  <label class="form-check-label" for="bhk1">1 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="2 BHK" id="bhk2" name="Sq">
+                  <label class="form-check-label" for="bhk2">2 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="3 BHK" id="bhk3" name="Sq">
+                  <label class="form-check-label" for="bhk3">3 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">4 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4+ BHK" id="bhk4plus" name="Sq">
+                  <label class="form-check-label" for="bhk4plus">4+ BHK</label>
+                </div>
+              </li>
+            </ul>
           </div>
+
           <div class="col-md-2">
             <select class="form-select">
               <option selected>Property Status</option>
@@ -118,15 +146,195 @@
       </div>
 
       <div class="tab-pane fade" id="rent" role="tabpanel">
-        <p class="mt-3">Coming Soon !!</p>
+        <!-- Search Box -->
+        <form class="row g-3 align-items-center">
+          <div class="col-md-2">
+            <select class="form-select">
+              <option>Mumbai</option>
+              <option selected>Bangalore</option>
+              <option>Pune</option>
+              <option>Chennai</option>
+              <option>Gurgaon</option>
+              <option>Hyderabad</option>
+              <option>Delhi</option>
+              <option>Noida</option>
+              <option>Greater Noida</option>
+              <option>Ghaziabad</option>
+              <option>Faridabad</option>
+            </select>
+          </div>
+          <div class="col-md-8">
+            <input type="text" class="form-control" placeholder="Search upto 3 localities or landmarks">
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-danger w-100">Search</button>
+          </div>
+          <div></div>
+          <br>
+          <div class="col-md-4">
+            <input class="form-check-input" type="radio" name="Type" id="Full House" value="Full House">
+            Full House
+            <input class="form-check-input" type="radio" name="Type" id="Land/Plot" value="Land/Plot">
+            PG/Hostel
+            <input class="form-check-input" type="radio" name="Type" id="Land/Plot" value="Land/Plot">
+            Flatmates
+          </div>
+          <div class="col-md-3 dropdown">
+            <button class="btn btn-outline-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select BHK Options
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1 BHK" id="bhk1" name="Sq">
+                  <label class="form-check-label" for="bhk1">1 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="2 BHK" id="bhk2" name="Sq">
+                  <label class="form-check-label" for="bhk2">2 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="3 BHK" id="bhk3" name="Sq">
+                  <label class="form-check-label" for="bhk3">3 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">4 BHK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4+ BHK" id="bhk4plus" name="Sq">
+                  <label class="form-check-label" for="bhk4plus">4+ BHK</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <select class="form-select">
+              <option selected>Availability</option>
+              <option>Within 15 Days</option>
+              <option>Within 30 Days</option>
+              <option>After 30 Days</option>
+            </select>
+          </div>
       </div>
 
       <div class="tab-pane fade" id="commercial" role="tabpanel">
-        <p class="mt-3">Coming Soon !!</p>
+        <form>
+    <div class="row g-3 align-items-center">
+      <div class="col-md-2">
+        <select class="form-select">
+          <option>Mumbai</option>
+          <option selected>Bangalore</option>
+          <option>Pune</option>
+          <option>Chennai</option>
+          <option>Gurgaon</option>
+          <option>Hyderabad</option>
+          <option>Delhi</option>
+          <option>Noida</option>
+          <option>Greater Noida</option>
+          <option>Ghaziabad</option>
+          <option>Faridabad</option>
+        </select>
+      </div>
+
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="Search upto 3 localities or landmarks">
+      </div>
+
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-danger w-100">Search</button>
       </div>
     </div>
+    <div></div>
     <br>
     <br>
+    <div class="row g-3 align-items-center">
+    <div class="col-md-3">
+            <input class="form-check-input" type="radio" name="Type" id="Full House" value="Full House">
+            Rent
+            <input class="form-check-input" type="radio" name="Type" id="Land/Plot" value="Land/Plot">
+            Buy
+          </div>
+          <div class="col-md-3 dropdown">
+            <button class="btn btn-outline-white dropdown-toggle " type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Property Type
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1 BHK" id="bhk1" name="Sq">
+                  <label class="form-check-label" for="bhk1">Office Space</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="2 BHK" id="bhk2" name="Sq">
+                  <label class="form-check-label" for="bhk2">Co-Working</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="3 BHK" id="bhk3" name="Sq">
+                  <label class="form-check-label" for="bhk3">Shop</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">Showroom</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4+ BHK" id="bhk4plus" name="Sq">
+                  <label class="form-check-label" for="bhk4plus">Industrial Building</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">Industrial Shed</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">Gowdown/Warehouse</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">Other business</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4 BHK" id="bhk4" name="Sq">
+                  <label class="form-check-label" for="bhk4">Restaurant/Cafe</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+  </form>
+
+        </div>
+        </div>
+        <br>
+        <br>
 
     <!-- Property Owner CTA -->
     <div class="text-center my-5>
